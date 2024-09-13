@@ -4,3 +4,9 @@ export enum DIRECTION {
     LEFT = 3,
     RIGHT = 4,
 }
+
+export enum PATHS {
+    HOME = "/",
+    ABOUT = "/about",
+    PROJECTS = "/projects",
+}

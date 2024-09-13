@@ -50,7 +50,6 @@
                     <div
                         class="absolute flex gap-8 w-full left-0 top-0 py-8 px-8"
                     >
-                        <!-- w-[239px] -->
                         <div
                             class="w-full h-[405px] bg-primary-200 rounded-lg"
                         ></div>
@@ -90,7 +89,11 @@
     </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+    title: "Charlene Tormes",
+});
+</script>
 
 <style scoped>
 .page-container {
