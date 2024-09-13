@@ -1,21 +1,34 @@
-<script lang="ts" setup>
+<template>
+    <div class="code-snippet bg-primary-200" tabindex="4">
+        <pre>
+      <code>
+        {{ code }}
+      </code>
+    </pre>
+    </div>
+</template>
+
+<script setup lang="ts">
 const props = defineProps({
-    gistUrl: {
+    code: {
         type: String,
         required: true,
     },
 });
-
-onMounted(() => {
-    const script = document.createElement("script");
-    script.src = props.gistUrl;
-    script.async = true;
-    document.getElementById("gist-container").appendChild(script);
-});
 </script>
 
-<template>
-    <client-only>
-        <div id="gist-container"></div>
-    </client-only>
-</template>
+<style scoped>
+.code-snippet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+}
+
+code {
+    white-space: pre-wrap;
+}
+</style>

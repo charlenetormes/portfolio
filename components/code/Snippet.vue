@@ -42,23 +42,25 @@
         <div
             class="w-full flex border-[1px] border-lines-100 py-6 px-7 rounded-[15px] text-secondary-100"
         >
-            <CodeGistEmbed
-                gistUrl="https://gist.github.com/charlenetormes/2cb78075d8f423309a3e1fc060117491.js"
-            />
+            <CodeGistEmbed :code="code" />
         </div>
+
+        <div class="border-b-[1px] h-[2px] border-lines-100 pt-3"></div>
+        <p
+            class="text-secondary-100 text-xs text-balance w-full text-center pt-2"
+        >
+            Created this helper function to remove html tags from a string that
+            was returned from the backend and did not need to be passed to a
+            v-html tag
+        </p>
     </div>
 </template>
 
 <script lang="ts" setup>
-// useHead({
-//     script: [
-//         {
-//             src: "https://gist.github.com/charlenetormes/2cb78075d8f423309a3e1fc060117491.js",
-//             type: "text/javascript",
-//             async: true,
-//         },
-//     ],
-// });
+const code = `
+export const removeHtmlTags = (str: string): string => {
+  return str?.replace(/<[^>]*>/g, '')
+}`;
 </script>
 
 <style scoped>

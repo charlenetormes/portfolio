@@ -2,3 +2,21 @@
 body {
     font-family: "Fira Code", "monospace";
 }
+
+.editor-container {
+    scrollbar-width: thin;
+    scrollbar-color: #607b96 #011627;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 16px;
+    background-color: #011627 !important;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: #607b96 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #607b96 !important;
+    opacity: 0.4;
+}

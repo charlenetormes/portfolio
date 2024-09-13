@@ -8,11 +8,13 @@
             </BaseSideDrawer>
             <div class="grid grid-cols-2 w-full overflow-hidden">
                 <div
-                    class="editor-container col-span-1 max-h-full overflow-scroll"
+                    class="editor-container col-span-1 max-h-full overflow-x-hidden"
                 >
                     <CodeEditor />
                 </div>
-                <div class="col-span-1 max-h-full overflow-scroll">
+                <div
+                    class="editor-container col-span-1 max-h-full overflow-y-auto"
+                >
                     <CodeShowcase />
                 </div>
             </div>
