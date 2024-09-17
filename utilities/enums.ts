@@ -10,3 +10,8 @@ export enum PATHS {
     ABOUT = "/about",
     PROJECTS = "/projects",
 }
+
+export enum TECH {
+    REACT = "react",
+    VUE = "vue",
+}

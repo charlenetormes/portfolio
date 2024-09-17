@@ -1,5 +1,12 @@
 <template>
-    <div class="page-container w-full bg-primary-200"></div>
+    <div class="page-container w-full bg-primary-200">
+        <div class="w-full h-full flex">
+            <BaseProjectDrawer />
+            <div class="w-full h-full flex">
+                <CodeProject />
+            </div>
+        </div>
+    </div>
 </template>
 
 <script lang="ts" setup>

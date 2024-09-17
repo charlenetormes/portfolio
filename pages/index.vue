@@ -40,7 +40,7 @@
                 class="relative col-span-1 flex justify-center items-center text-secondary-100"
             >
                 <img
-                    class="absolute left-0 top-0 w-full h-[850px] z-1"
+                    class="absolute left-0 top-0 w-full h-full z-1"
                     src="/images/svg/bg.svg"
                 />
                 <div
