@@ -9,6 +9,7 @@ export enum PATHS {
     HOME = "/",
     ABOUT = "/about",
     PROJECTS = "/projects",
+    CONTACTS = "/contacts",
 }
 
 export enum TECH {
