@@ -1,3 +1,5 @@
+import { TECH } from "./enums";
+
 export const ABOUT_ME = [
     {
         statement: "/**",
@@ -269,7 +271,7 @@ export const CODE_AXIS = [
         statement: "* During my college years, I started freelancing for",
     },
     {
-        statement: "* a small startup in Cebu City. They specialize in ",
+        statement: "* a small startup in Cebu City. They specialized in ",
     },
     {
         statement: "* Wordpress development. I was mainly working on the ",
@@ -1202,5 +1204,68 @@ export const HOBBIES_INFO = [
         section: "collections",
         files: ["funko-pop"],
         folderColor: "#3A49A4",
+    },
+];
+
+export const PROJECTS = [
+    {
+        sequence: "Project 1",
+        title: "_calculator-app",
+        description:
+            "A calculator app that does basic arithmetic functions and it's built to simulate an iOS calculator app.",
+        link: "https://charlenetormes.github.io/candyspace/calculator",
+        image: "/images/png/calculator.png",
+        tech: TECH.VUE,
+        top: false,
+    },
+    {
+        sequence: "Project 2",
+        title: "_storma-landing",
+        description:
+            "Built the landing page for Storma using Nuxt 3, Tailwind, and Vuetify. It's connected to a Strapi backend.",
+        link: "https://storma.com/",
+        image: "/images/webp/bg-homepage.webp",
+        tech: TECH.VUE,
+        top: false,
+    },
+    {
+        sequence: "Project 3",
+        title: "_storma-developer-portal",
+        description:
+            "I contributed in the development of the Talent Portal. This is the website for talents looking for jobs.",
+        link: "https://client.cloudemployee.io/auth/login/",
+        image: "/images/jpeg/bg-developers.jpg",
+        tech: TECH.VUE,
+        top: false,
+    },
+    {
+        sequence: "Project 4",
+        title: "_storma-client-portal",
+        description:
+            "I contributed in the developement of the Client Portal. This is where the companies manage their talents.",
+        link: "https://talent.cloudemployee.io/auth/login/",
+        image: "/images/png/hero-companies-bg.png",
+        tech: TECH.VUE,
+        top: false,
+    },
+    {
+        sequence: "Project 5",
+        title: "_supernudge-app",
+        description:
+            "Skyrocket response rates. Automate email nudges to recipients.",
+        link: "https://supernudge.app/",
+        image: "/images/png/supernudge.png",
+        tech: TECH.VUE,
+        top: false,
+    },
+    {
+        sequence: "Project 6",
+        title: "_knook-knook-app",
+        description:
+            "A simple to do list website. This is based off the popular knock knock pads.",
+        link: "https://knock-knock-89c26.web.app/",
+        image: "/images/png/knookknook.png",
+        tech: TECH.REACT,
+        top: true,
     },
 ];
