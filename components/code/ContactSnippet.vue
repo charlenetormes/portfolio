@@ -86,19 +86,19 @@ const digitLength = (line: number) => {
 };
 
 const name = computed(() => {
-    return `&nbsp;&nbsp;<span class="text-accent-500">name</span>: <span class="text-accent-100">"${
+    return `&nbsp;&nbsp;<span class="text-accent-500 text-wrap max-w-full">name</span>: <span class="text-accent-100">"${
         props?.form?.name ?? ""
     }"</span>`;
 });
 
 const email = computed(() => {
-    return `&nbsp;&nbsp;<span class="text-accent-500">email</span>: <span class="text-accent-100">"${
+    return `&nbsp;&nbsp;<span class="text-accent-500 text-wrap max-w-full">email</span>: <span class="text-accent-100">"${
         props?.form?.email ?? ""
     }"</span>`;
 });
 
 const message = computed(() => {
-    return `&nbsp;&nbsp;<span class="text-accent-500">message</span>: <span class="text-accent-100">"${
+    return `&nbsp;&nbsp;<span class="text-accent-500 text-wrap max-w-full">message</span>: <span class="text-accent-100">"${
         props?.form?.message ?? ""
     }"</span>`;
 });

@@ -5,6 +5,7 @@
         </div>
         <div class="flex items-start justify-center py-20 w-full h-full">
             <form
+                @submit.prevent="handleSubmit"
                 class="flex flex-col gap-6 text-secondary-100 max-w-xl w-full"
             >
                 <div class="flex flex-col gap-2">
@@ -38,7 +39,7 @@
                     type="submit"
                     class="max-w-40 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                    submit-message
+                    {{ isLoading ? "submitting..." : "submit-message" }}
                 </button>
             </form>
         </div>
@@ -47,12 +48,35 @@
 
 <script lang="ts" setup>
 const emits = defineEmits(["update:modelValue"]);
+const isLoading = ref(false);
 
 const form = reactive({
     name: "",
     email: "",
     message: "",
 });
+
+const handleSubmit = async () => {
+    isLoading.value = true;
+    await sendEmail();
+    isLoading.value = false;
+};
+
+const sendEmail = async () => {
+    try {
+        const response = await $fetch("/api/send-email", {
+            method: "POST",
+            body: {
+                sender: form.name,
+                senderEmail: form.email,
+                message: form.message,
+            },
+        });
+        console.log(response);
+    } catch (error) {
+        console.error("Failed to send email", error);
+    }
+};
 
 watch(
     () => form.name,
