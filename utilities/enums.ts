@@ -16,3 +16,21 @@ export enum TECH {
     REACT = "react",
     VUE = "vue",
 }
+
+export enum VIEWS {
+    PROFESSIONAL = "professional",
+    PERSONAL = "personal",
+    HOBBIES = "hobbies",
+}
+
+export enum BIO {
+    COLLEGE = "college",
+    HIGHSCHOOL = "highschool",
+}
+
+export enum FILES {
+    ABOUT_ME = "about-me",
+    ARTIFICIAL_INTELLIGENCE = "artificial-intelligence",
+    BLOCKCHAIN = "blockchain",
+    COLLEGE = "college",
+}

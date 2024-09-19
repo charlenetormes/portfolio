@@ -66,6 +66,21 @@ const props = defineProps({
     form: { type: Object as PropType<FormValues>, default: null },
 }) satisfies Props;
 
+const data = reactive([
+    `<span class="text-accent-400">const</span> <span class="text-accent-500">button</span> <span class="text-accent-400">=</span> <span class="text-accent-400">document</span>.<span class="text-accent-400">querySelector</span>(<span class="text-accent-100">'#sendBtn'</span>);`,
+    ``,
+    `<span class="text-accent-500">const</span> <span class="text-accent-400">message</span> = {`,
+    ``,
+    ``,
+    ``,
+    ``,
+    `}`,
+    ``,
+    `<span class="text-accent-500">button</span>.<span class="text-accent-500">addEventListener</span>(<span class="text-accent-100">'click'</span>, () <span class="text-accent-400">=></span> {`,
+    `&nbsp;&nbsp;<span class="text-accent-500">form</span>.<span class="text-accent-500">send</span>(<span class="text-accent-500">message</span>);`,
+    `})`,
+]);
+
 const digitLength = (line: number) => {
     return line?.toString()?.length;
 };
@@ -93,19 +108,4 @@ const date = computed(() => {
         "ddd DD MMM"
     )}`;
 });
-
-const data = reactive([
-    `<span class="text-accent-400">const</span> <span class="text-accent-500">button</span> <span class="text-accent-400">=</span> <span class="text-accent-400">document</span>.<span class="text-accent-400">querySelector</span>(<span class="text-accent-100">'#sendBtn'</span>);`,
-    ``,
-    `<span class="text-accent-500">const</span> <span class="text-accent-400">message</span> = {`,
-    ``,
-    ``,
-    ``,
-    ``,
-    `}`,
-    ``,
-    `<span class="text-accent-500">button</span>.<span class="text-accent-500">addEventListener</span>(<span class="text-accent-100">'click'</span>, () <span class="text-accent-400">=></span> {`,
-    `&nbsp;&nbsp;<span class="text-accent-500">form</span>.<span class="text-accent-500">send</span>(<span class="text-accent-500">message</span>);`,
-    `})`,
-]);
 </script>
