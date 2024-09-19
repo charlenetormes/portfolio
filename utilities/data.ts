@@ -246,6 +246,898 @@ export const BLOCKCHAIN = [
     },
 ];
 
+export const CODE_AXIS = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Code Axis, Software Developer",
+    },
+    {
+        statement: "* July 2017 - December 2017",
+    },
+    {
+        statement: "* Cebu City",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* During my college years, I started freelancing for",
+    },
+    {
+        statement: "* a small startup in Cebu City. They specialize in ",
+    },
+    {
+        statement: "* Wordpress development. I was mainly working on the ",
+    },
+    {
+        statement: "* maintenance and bugfixing for their client's websites.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Tech Stack:",
+    },
+    {
+        statement: "* Wordpress,PHP",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const ALLIANCE = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Alliance, Internship Trainee",
+    },
+    {
+        statement: "* April 2018 - June 2018",
+    },
+    {
+        statement: "* Cebu City",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I was part of their Summer Bridge Program where in we ",
+    },
+    {
+        statement: "* develop a training system for their employees. I learned",
+    },
+    {
+        statement:
+            "* a lot about Spring Java MVC, Hibernate SQL, & Javascript.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Tech Stack:",
+    },
+    {
+        statement: "* Sprint Java,Hibernate SQL,Javascript",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const LEXMARK = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Lexmark Research and Development, Software Developer",
+    },
+    {
+        statement: "* April 2019 - October 2020",
+    },
+    {
+        statement: "* Cebu City",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* I was assigned to the Data Science department. I was the ",
+    },
+    {
+        statement:
+            "* point person for anything Power BI related. I was able to",
+    },
+    {
+        statement:
+            "* conduct a series of trainings to the engineers in Lexmark",
+    },
+    {
+        statement:
+            "* about Power BI and how to use it. I also contributed to other",
+    },
+    {
+        statement:
+            "* internal web projects in Lexmark for their monitoring system.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Tech Stack:",
+    },
+    {
+        statement: "* PowerBI,Node.JS,Java,PHP",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const UNAWA = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Unawa, Freelance Backend Developer",
+    },
+    {
+        statement: "* July 2022 - May 2023",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* I was the one who pioneered their backend projects using ",
+    },
+    {
+        statement: "* NestJS and MongoDB. I can't disclose the projects as I ",
+    },
+    {
+        statement:
+            "* have signed an NDA but it involves making a robust document",
+    },
+    {
+        statement: "* management system.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Tech Stack:",
+    },
+    {
+        statement: "* NodeJS,NestJS,Typescript,MongoDB",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const UPWORK = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Storma, Freelance Front-end Developer",
+    },
+    {
+        statement: "* April 2023 - September 2024",
+    },
+    {
+        statement: "* Cebu City",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I was the lead developer for the Storma Website using",
+    },
+    {
+        statement: "* Vue/Nuxt 3, Vuetify, and TailwindCSS. I also contributed",
+    },
+    {
+        statement: "* in the development of their Client and Talent portal.",
+    },
+    {
+        statement: "* The Talent Portal is where freelancers/talents can look",
+    },
+    {
+        statement: "* for jobs. The Client Portal is for the companies to post",
+    },
+    {
+        statement: "* for jobs and to also manage their talents.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Tech Stack:",
+    },
+    {
+        statement: "* Vue/Nuxt3,Vuetify,TailwindCSS,Pinia,Strapi",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const INSPIREX = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* InspireX, Senior Software Engineer",
+    },
+    {
+        statement: "* November 2020 - Present",
+    },
+    {
+        statement: "* Cebu City",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I was initially hired as a Firebase Backend Developer.",
+    },
+    {
+        statement: "* I was the main person responsible for the backend ",
+    },
+    {
+        statement: "* development of our chrome extensions. Eventually, I ",
+    },
+    {
+        statement:
+            "* up-skilled myself and learned about Front-end development.",
+    },
+    {
+        statement: "* I started to contribute on the front-end side with the ",
+    },
+    {
+        statement: "* chrome extensions. As a Full Stack Developer, I've been",
+    },
+    {
+        statement:
+            "* involved with both sides on the front-end and back-end. We",
+    },
+    {
+        statement: "* had more internal projects about monitoring system, ",
+    },
+    {
+        statement: "* traffic management system, and tools for our company's",
+    },
+    {
+        statement: "* media buyers.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Tech Stack:",
+    },
+    {
+        statement:
+            "* VueJS,Nuxt,ReactJS,NodeJS,Typescript,Firebase,PostgreSQL,",
+    },
+    {
+        statement: "* MySQL,PHP,AWS, Google Appscript,Docker,Git",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const PPC = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Philippine Programming Challenge 2018",
+    },
+    {
+        statement: "* Result: Finalist (Top 10)",
+    },
+    {
+        statement: "* February 2019",
+    },
+    {
+        statement: "* Issued by: Coder's Guild",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Philippine Programming Challenge is a programming ",
+    },
+    {
+        statement: "* competition that aims to identify the most talented ",
+    },
+    {
+        statement: "* entry-level programmers in the country, by utilizing ",
+    },
+    {
+        statement: "* an automated assessment tool localized for the specific ",
+    },
+    {
+        statement: "* needs of the Philippine software industry.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const MAVC = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Mobile App Venture Challenge 2018",
+    },
+    {
+        statement: "* Result: Champion",
+    },
+    {
+        statement: "* November 2018",
+    },
+    {
+        statement: "* Issued by: MAVC Group",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* They were looking for developers that are willing",
+    },
+    {
+        statement: "* to have an exceptional learning experience that ",
+    },
+    {
+        statement: "* encompasses creative design and the development ",
+    },
+    {
+        statement: "* of entrepreneurial skills, mindset, and spirit to",
+    },
+    {
+        statement: "* join the Mobile App Venture Challenge (MAVC).",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* We won 150,000 pesos in cash prize for being able",
+    },
+    {
+        statement: "* to come up with a unique and sell-able mobile app",
+    },
+    {
+        statement: "* under the Open Class Category.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const ANDROID_2018 = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Android Masters 2018",
+    },
+    {
+        statement: "* Result: 1st Runner-Up",
+    },
+    {
+        statement: "* November 2018",
+    },
+    {
+        statement: "* Issued by: GDG Philippines",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* We joined this competition back in 2018 and we developed ",
+    },
+    {
+        statement:
+            "* an app called AEON. This app was built to help the elderly",
+    },
+    {
+        statement:
+            "* people keep track of their maintenance medicines that were",
+    },
+    {
+        statement:
+            "* provided by the local government of Cebu City. The app was ",
+    },
+    {
+        statement:
+            "* very much loved by the judges but we fell short in the UI",
+    },
+    {
+        statement:
+            "* and UX portion. We were still able to bag the Social Relevance",
+    },
+    {
+        statement: "* Award along with 2nd Place.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const ANDROID_2017 = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Android Masters 2017",
+    },
+    {
+        statement: "* Result: Finalist (Top 5)",
+    },
+    {
+        statement: "* December 2017",
+    },
+    {
+        statement: "* Issued by: GDG Philippines",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* This was my very first competition. We did not expect to ",
+    },
+    {
+        statement:
+            "* make it to the finals. We made an app that basically monitors",
+    },
+    {
+        statement:
+            "* the emotions of the viewer while watching a video. We generate",
+    },
+    {
+        statement:
+            "* a report at the end of each watch. To show at which timestamps",
+    },
+    {
+        statement:
+            "* did they convey such emotions. We weren't able to place this ",
+    },
+    {
+        statement: "* year but we still won the Social Relevance Award.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const PTF = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Accenture's Program the Future 2018",
+    },
+    {
+        statement: "* Result: 2nd Place",
+    },
+    {
+        statement: "* August 2018",
+    },
+    {
+        statement: "* Issued by: Accenture",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* We made it to the finals and this event was held in Manila.",
+    },
+    {
+        statement: "* We made an application that would make the lives of the ",
+    },
+    {
+        statement:
+            "* Long Life Medical Assistance Program in Cebu City easier by",
+    },
+    {
+        statement:
+            "* digitalizing their manual records and inventory system. It ",
+    },
+    {
+        statement:
+            "* was a mobile and web application. We were only able to place",
+    },
+    {
+        statement: "* second in this competition.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const AWS_CLOUD = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* AWS Cloud Practitioner",
+    },
+    {
+        statement: "* April 2024",
+    },
+    {
+        statement: "* Issued by: AWS",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* The AWS Cloud Practitioner validates foundational, high-",
+    },
+    {
+        statement:
+            "* level understanding of AWS Cloud, services, and terminology.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const SCRUM_MASTER = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Scrum Master 2021",
+    },
+    {
+        statement: "* September 2021",
+    },
+    {
+        statement: "* Issued by: Scrum Alliance",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* The scrum master on a scrum team fosters an effective ",
+    },
+    {
+        statement: "* and productive working environment. One way they do is",
+    },
+    {
+        statement:
+            "* by guiding others to understand scrum values and practices.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const TOPCIT = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Test of Practical Competency in Information Technology",
+    },
+    {
+        statement: "* September 2018",
+    },
+    {
+        statement: "* Issued by: Institute for Information & communications ",
+    },
+    {
+        statement: "* Technology Promotion (Korea)",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* I took this test last 2018 and I ranked 7th nationwide here in the Philippines.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const VALORANT = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Valorant",
+    },
+    {
+        statement: "* Peak Ranking: Ascendant 2",
+    },
+    {
+        statement: "* Main: Reyna or Jett",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I play PLAY a lot of Valorant and I mean like the sweaty",
+    },
+    {
+        statement:
+            "* type of gaming. I love gaming competitively -- it brings ",
+    },
+    {
+        statement: "* out a different beast in me. (joke). Let's connect and",
+    },
+    {
+        statement: "* play sometimes! ",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const PS5 = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* PS5 Console Gaming",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement:
+            "* I've bought a PS5 last 2022 and I haven't played that much.",
+    },
+    {
+        statement:
+            "* I have this weird sense of pride(?) that I need to 100% a game",
+    },
+    {
+        statement:
+            "* or else I won't move on to the next game. Pretty much why I've",
+    },
+    {
+        statement:
+            "* only finished 1 game (Spiderman). I did buy a lot of ps5 games ",
+    },
+    {
+        statement: "* and they're still in my backlogs.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const SWITCH = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* SWITCH GAMING",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I bought this one because of its portability. I played",
+    },
+    {
+        statement:
+            "* a lot of Stardew Valley and Animal Crossing. Like A LOT. ",
+    },
+    {
+        statement: "* I like farming simulator games so much -- it will be the",
+    },
+    {
+        statement: "* death of me. Add me if you want some switch friends!",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const TABLE_TENNIS = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Table Tennis",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I've started playing table tennis when I was still",
+    },
+    {
+        statement: "* in college. I could not stop playing it with my friends.",
+    },
+    {
+        statement: "* So, I entered the school's competition where I won the",
+    },
+    {
+        statement:
+            "* tournament. I was scouted by the Head Coach of Table Tennis.",
+    },
+    {
+        statement:
+            "* That's my story of how I became a Table Tennis Varsity player. ",
+    },
+    {
+        statement: "* To this day, I still play a lot of table tennis. ",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
+export const FUNKO_POP = [
+    {
+        statement: "/**",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* Funko Pop Addiction",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "* I started collecting fumko pops way back 2021. It",
+    },
+    {
+        statement: "* started when I got addicted to the Marvel Cinematic",
+    },
+    {
+        statement: "* Universe. I wanted to collect my favorite superheroes.",
+    },
+    {
+        statement: "* I just went into a very deep rabbit hole -- from only ",
+    },
+    {
+        statement: "* collecting my favorite superheroes and to now villains",
+    },
+    {
+        statement: "* and super rare funko pop items. I think I have 40 pops",
+    },
+    {
+        statement: "* at the moment. I've stopped collecting now since I don't",
+    },
+    {
+        statement: "* have the energy anymore.",
+    },
+    {
+        statement: "*",
+    },
+    {
+        statement: "**/",
+    },
+];
+
 export const PERSONAL_INFO = [
     {
         section: "bio",
@@ -260,6 +1152,55 @@ export const PERSONAL_INFO = [
     {
         section: "education",
         files: ["college"],
+        folderColor: "#3A49A4",
+    },
+];
+
+export const PROFESSIONAL_INFO = [
+    {
+        section: "work-experience",
+        files: [
+            "inspirex",
+            "upwork",
+            "unawa",
+            "lexmark",
+            "alliance",
+            "code-axis",
+        ],
+        folderColor: "#E99287",
+    },
+    {
+        section: "competitions",
+        files: [
+            "ppc-2018",
+            "mavc-2018",
+            "android-masters-2018",
+            "program-the-future-2018",
+            "android-masters-2017",
+        ],
+        folderColor: "#43D9AD",
+    },
+    {
+        section: "certifications",
+        files: ["aws-cloud-practitioner", "scrum-master", "topcit"],
+        folderColor: "#3A49A4",
+    },
+];
+
+export const HOBBIES_INFO = [
+    {
+        section: "gaming",
+        files: ["valorant", "ps5", "switch"],
+        folderColor: "#E99287",
+    },
+    {
+        section: "sports",
+        files: ["table-tennis"],
+        folderColor: "#43D9AD",
+    },
+    {
+        section: "collections",
+        files: ["funko-pop"],
         folderColor: "#3A49A4",
     },
 ];
