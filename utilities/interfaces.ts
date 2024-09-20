@@ -1,3 +1,5 @@
+import type { Moment } from "moment";
+
 export interface ISection {
     folderColor: string;
     section: string;
@@ -16,4 +18,17 @@ export interface IProject {
     image: string;
     tech: string;
     top: boolean;
+}
+
+export interface ITestimonial {
+    stars: number;
+    jobTitle: string;
+    testimonial: string;
+    link: string;
+}
+
+export interface ISnippet {
+    code: string;
+    description: string;
+    date: Date;
 }

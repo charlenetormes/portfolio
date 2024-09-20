@@ -4,6 +4,7 @@
     >
         <span class="text-nowrap">{{ title }}</span>
         <XMarkIcon
+            v-if="!hideClose"
             @click="handleClick"
             class="w-5 h-5 cursor-pointer hover:text-secondary-200 transition-all duration-100"
         />
@@ -17,10 +18,12 @@ const emits = defineEmits(["handleClose"]);
 
 interface Props {
     title: string;
+    hideClose: boolean;
 }
 
 defineProps({
     title: { type: String, default: "personal-info" },
+    hideClose: { type: Boolean, default: false },
 }) satisfies Props;
 
 const handleClick = () => {

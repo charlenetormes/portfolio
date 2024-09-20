@@ -1,4 +1,5 @@
 import { TECH } from "./enums";
+import moment from "moment";
 
 export const ABOUT_ME = [
     {
@@ -1204,6 +1205,104 @@ export const HOBBIES_INFO = [
         section: "collections",
         files: ["funko-pop"],
         folderColor: "#3A49A4",
+    },
+];
+
+export const TESTIMONIALS = [
+    {
+        stars: 5,
+        jobTitle: "Build a Gmail Add-on",
+        testimonial:
+            "Charlene is incredible! One of the best freelancers I've worked with. Responsive, fluent English, incredible work, coding standards followed to perfection -- and all completed on time. I couldn't recommend Charlene enough, a fantastic partner and developer. I was particularly impressed by Charlene's Firebase skill set. She was able to integrate Firebase Auth, Firestore, and Firebase hosting into my application -- and even connect it with a Google Appscript front-end that worked wonderfully. My pet peeve is when developers to do not comment their code -- but Charlene's comments were great and descriptive - inclusive of a Readme in the github repo. Highly recommend, thank you Charlene!",
+        link: "https://www.upwork.com/freelancers/~0113f243486f4ea1ab",
+    },
+    {
+        stars: 5,
+        jobTitle: "Nuxt 3 + Notion API authorization",
+        testimonial:
+            "Charlene created a first draft promptly and also made changes quickly based on the feedback. She clearly communicated when she was going to work on the task which made it easy for me to plan my work. Overall, she did a great job and I'll consider working with her again.",
+        link: "https://www.upwork.com/freelancers/~0113f243486f4ea1ab",
+    },
+    {
+        stars: 5,
+        jobTitle: "Nodejs to download images to bucket and rewrite HMTL",
+        testimonial:
+            "Charlene is an absolute pro. Thank you for your help with my Firebase application!",
+        link: "https://www.upwork.com/freelancers/~0113f243486f4ea1ab",
+    },
+    {
+        stars: 5,
+        jobTitle: "Nuxt3 + Firebase developer",
+        testimonial: "No written feedback given.",
+        link: "https://www.upwork.com/freelancers/~0113f243486f4ea1ab",
+    },
+];
+
+export const SNIPPETS = [
+    {
+        code: `
+    export const removeHtmlTags = (str: string): string => {
+      return str?.replace(/<[^>]*>/g, '')
+    }`,
+        description:
+            "Created this helper function to remove html tags from a string that was returned from the backend and did not need to be passed to a v-html tag",
+        date: new Date("2023-10-21"),
+    },
+    {
+        code: `
+        export const getScriptTagAttributes = (script_injection: any[]): any => {
+        const htmlContent = /<script[^>]*>(.*?)<\/script>/gs
+        const removeScript = /(<script){1}(.)*>|(<\/script>)/g
+        const scripts: any = []
+        script_injection?.forEach((item) => {
+            const scriptOnly = item?.attributes?.script?.match(htmlContent)
+            if (scriptOnly) {
+            for (const scriptTag of scriptOnly) {
+                const attrs: any = {}
+                // Extract the attributes from each script tag
+                const attributeRegex = /([a-zA-Z-]+)="([^"]*)"/g;
+                let match;
+
+                while ((match = attributeRegex.exec(scriptTag)) !== null) {
+                const attributeName = match[1];
+                const attributeValue = match[2];
+                attrs[attributeName] = attributeValue;
+                }
+
+                const innerHTML = scriptTag?.replace('<script>', '')?.replace('</script>', '')?.replace(removeScript, '')
+                const script =  {
+                ...attrs,
+                innerHTML: innerHTML
+                }
+                scripts.push(script)
+            }
+            }
+        });
+
+        return scripts
+    }`,
+        description:
+            "I created this code to be able to extract and inject a script tag to an html document from a plaintext string",
+        date: new Date("2024-02-01"),
+    },
+    {
+        code: `
+        export const searchInArray = (array: [], str: string) => {
+            return _.filter(
+                array,
+                _.flow(
+                _.identity,
+                _.values,
+                _.join,
+                _.toLower,
+                _.partialRight(_.includes, str)
+                )
+            )
+        }
+        `,
+        description:
+            "Created this helper function for when you have an array of objects and you want to search for a term within any of the object's values, this function will filter out only the objects that contain the search term.",
+        date: new Date("2024-05-01"),
     },
 ];
 

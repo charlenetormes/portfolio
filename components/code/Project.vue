@@ -1,7 +1,11 @@
 <template>
     <div class="w-full flex flex-col overflow-y-hidden">
         <div class="w-full border-b-[1px] border-lines-100">
-            <CodeTab title="Vue" @handleClose="handleClose" />
+            <CodeTab
+                :title="tabTitle"
+                :hideClose="true"
+                @handleClose="handleClose"
+            />
         </div>
         <div
             class="grid grid-cols-3 gap-x-8 gap-y-8 w-full h-full py-20 px-28 overflow-scroll"
@@ -27,10 +31,20 @@
 
 <script lang="ts" setup>
 import { PROJECTS } from "@/utilities/data";
+import { capitalizeFirstLetter } from "@/utilities/helper";
 import type { IProject } from "@/utilities/interfaces";
 
 const props = defineProps({
     selected: { type: Array as PropType<string[]>, default: [] },
+});
+
+const tabTitle = computed(() => {
+    if (props?.selected?.length === 0) return "All;";
+    return (
+        props?.selected
+            ?.map((val: string) => capitalizeFirstLetter(val))
+            ?.join(";") + ";"
+    );
 });
 
 const filteredProjects = computed(() => {
