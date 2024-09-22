@@ -92,5 +92,16 @@
 
 <script lang="ts" setup>
 import { PATHS } from "@/utilities/enums";
+import {
+    Disclosure,
+    DisclosureButton,
+    DisclosurePanel,
+    Menu,
+    MenuButton,
+    MenuItem,
+    MenuItems,
+} from "@headlessui/vue";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
+import { PlusIcon } from "@heroicons/vue/20/solid";
 const route = useRoute();
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div class="w-full flex flex-col overflow-y-hidden">
-        <div class="w-full border-b-[1px] border-lines-100">
+        <div class="hidden lg:block w-full border-b-[1px] border-lines-100">
             <CodeTab
                 :title="tabTitle"
                 :hideClose="true"
@@ -8,7 +8,7 @@
             />
         </div>
         <div
-            class="grid grid-cols-3 gap-x-8 gap-y-8 w-full h-full py-20 px-28 overflow-scroll"
+            class="grid grid-cols-1 mobile:grid-cols-2 lg:grid-cols-3 mobile:gap-x-4 lg:gap-x-8 mobile:gap-y-4 lg:gap-y-8 w-full h-full mobile:py-6 lg:py-20 mobile:px-6 lg:px-28 overflow-scroll"
         >
             <div
                 class="col-span-1"

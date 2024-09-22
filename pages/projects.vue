@@ -1,6 +1,8 @@
 <template>
     <div class="page-container w-full bg-primary-200">
-        <div class="w-full h-full flex text-white">
+        <div
+            class="w-full h-full mobile:flex-col lg:flex text-white overflow-hidden"
+        >
             <BaseProjectDrawer v-model="selectedTechs" />
             <div class="w-full h-full flex">
                 <CodeProject :selected="selectedTechs" />
@@ -20,5 +22,9 @@ const selectedTechs = ref([]);
 <style scoped>
 .page-container {
     height: calc(100vh - 115px);
+
+    @media (max-width: 1023px) {
+        height: calc(100vh - 57px);
+    }
 }
 </style>

@@ -68,8 +68,8 @@ useHead({
 });
 
 const fileView: {
-    lines: ILine[];
-    title: string;
+    lines: ILine[] | null;
+    title: string | null;
     isShowing: boolean;
     navigation: ISection[];
     testimonial: ITestimonial | null;

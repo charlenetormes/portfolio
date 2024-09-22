@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full flex bg-primary-200 min-h-[50px] border-[1px] border-lines-100"
+        class="w-full hidden lg:flex bg-primary-200 min-h-[50px] border-[1px] border-lines-100"
     >
         <div class="relative border-r-[1px] border-lines-100 px-5 py-4">
             <span class="text-secondary-100 text-base">find me in:</span>

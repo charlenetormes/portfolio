@@ -10,6 +10,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            screens: {
+                mobile: { max: "1124px" },
+            },
             colors: {
                 primary: {
                     100: "#011221",
