@@ -1,6 +1,8 @@
 <template>
-    <div class="flex flex-col gap-3">
-        <div class="flex gap-2 w-full text-secondary-100">
+    <div class="flex flex-col gap-3 justify-center items-center">
+        <div
+            class="flex gap-2 w-full text-secondary-100 items-center justify-center"
+        >
             <h3 class="text-accent-500">{{ sequence }}</h3>
             <span>//</span>
             <span>{{ title }}</span>

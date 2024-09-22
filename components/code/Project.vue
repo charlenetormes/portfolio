@@ -8,7 +8,7 @@
             />
         </div>
         <div
-            class="grid grid-cols-1 mobile:grid-cols-2 lg:grid-cols-3 mobile:gap-x-4 lg:gap-x-8 mobile:gap-y-4 lg:gap-y-8 w-full h-full mobile:py-6 lg:py-20 mobile:px-6 lg:px-28 overflow-scroll"
+            class="grid-container mobile:gap-x-4 lg:gap-x-8 mobile:gap-y-4 lg:gap-y-8 w-full h-full mobile:py-6 lg:py-20 mobile:px-6 lg:px-28 overflow-scroll"
         >
             <div
                 class="col-span-1"
@@ -57,3 +57,16 @@ const filteredProjects = computed(() => {
 
 const handleClose = () => {};
 </script>
+
+<style scoped>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    @media (max-width: 1124px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (max-width: 1023px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+</style>

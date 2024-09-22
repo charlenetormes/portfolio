@@ -1,10 +1,13 @@
 <template>
     <div class="w-full flex flex-col overflow-y-hidden">
-        <div class="w-full border-b-[1px] border-lines-100">
+        <div class="hidden lg:block w-full border-b-[1px] border-lines-100">
             <CodeTab title="contacts" />
         </div>
-        <div class="flex items-start justify-center py-20 w-full h-full">
+        <div
+            class="flex items-start justify-center mobile:px-6 py-20 w-full bg-primary-200"
+        >
             <form
+                v-if="!isSubmitted"
                 @submit.prevent="handleSubmit"
                 class="flex flex-col gap-6 text-secondary-100 max-w-xl w-full"
             >
@@ -42,6 +45,23 @@
                     {{ isLoading ? "submitting..." : "submit-message" }}
                 </button>
             </form>
+            <div
+                v-else-if="isSubmitted"
+                class="flex flex-col items-center justify-center gap-4 max-w-96 text-center"
+            >
+                <h3 class="text-2xl text-white">Thank You! 🤘</h3>
+                <p class="text-balance">
+                    Your message has been accepted. You will receive answer
+                    really soon!
+                </p>
+                <button
+                    @click="sendNewMessage"
+                    type="button"
+                    class="max-w-40 rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                    send-new-message
+                </button>
+            </div>
         </div>
     </div>
 </template>
@@ -49,6 +69,7 @@
 <script lang="ts" setup>
 const emits = defineEmits(["update:modelValue"]);
 const isLoading = ref(false);
+const isSubmitted = ref(false);
 
 const form = reactive({
     name: "",
@@ -60,6 +81,10 @@ const handleSubmit = async () => {
     isLoading.value = true;
     await sendEmail();
     isLoading.value = false;
+};
+
+const sendNewMessage = () => {
+    isSubmitted.value = false;
 };
 
 const sendEmail = async () => {

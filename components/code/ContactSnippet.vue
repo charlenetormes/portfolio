@@ -6,7 +6,7 @@
                 <div
                     v-for="(line, index) in data"
                     :key="index"
-                    class="flex gap-10"
+                    class="line-container flex gap-10 lg:text-base"
                 >
                     <span>{{ index + 1 }}</span>
                     <div
@@ -109,3 +109,11 @@ const date = computed(() => {
     )}`;
 });
 </script>
+
+<style scoped>
+.line-container {
+    @media (max-width: 1200px) {
+        font-size: 14px;
+    }
+}
+</style>
