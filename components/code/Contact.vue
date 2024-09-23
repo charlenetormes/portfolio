@@ -89,7 +89,7 @@ const sendNewMessage = () => {
 
 const sendEmail = async () => {
     try {
-        const response = await $fetch("/api/send-email", {
+        const response = await $fetch("/portfolio/api/send-email", {
             method: "POST",
             body: {
                 sender: form.name,
