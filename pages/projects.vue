@@ -22,9 +22,9 @@ const selectedTechs = ref([]);
 <style scoped>
 .page-container {
     height: calc(100vh - 115px);
-
     @media (max-width: 1023px) {
-        height: calc(100vh - 57px);
+        min-height: 100vh;
+        height: 100%;
     }
 }
 </style>

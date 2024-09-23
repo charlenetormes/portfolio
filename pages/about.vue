@@ -1,6 +1,6 @@
 <template>
     <div class="page-container w-full bg-primary-200">
-        <div class="w-full h-full flex">
+        <div class="w-full h-full flex flex-col lg:flex-row">
             <BaseSideDrawer
                 @handleFileClick="handleFileClick"
                 :sections="fileView.navigation"
@@ -14,6 +14,7 @@
                 </template>
             </BaseSideDrawer>
             <AboutInfo
+                :sectionTitle="view.title"
                 :lines="fileView.lines"
                 :title="fileView.title"
                 :testimonial="fileView.testimonial"
@@ -131,116 +132,139 @@ const handleFileClick = (file: string) => {
     fileView.testimonial = null;
     switch (file) {
         case FILES.ABOUT_ME:
+            view.title = "personal-info";
             fileView.lines = ABOUT_ME;
             fileView.title = FILES.ABOUT_ME;
             fileView.snippet = SNIPPETS[0];
             break;
         case FILES.ARTIFICIAL_INTELLIGENCE:
+            view.title = "personal-info";
             fileView.lines = ARTIFICIAL_INTELLIGENCE;
             fileView.title = FILES.ARTIFICIAL_INTELLIGENCE;
             fileView.snippet = SNIPPETS[1];
             break;
         case FILES.BLOCKCHAIN:
+            view.title = "personal-info";
             fileView.lines = BLOCKCHAIN;
             fileView.title = FILES.BLOCKCHAIN;
             fileView.snippet = SNIPPETS[2];
             break;
         case FILES.COLLEGE:
+            view.title = "personal-info";
             fileView.lines = COLLEGE;
             fileView.title = FILES.COLLEGE;
             fileView.snippet = SNIPPETS[0];
             break;
         case FILES.CODE_AXIS:
+            view.title = "professional-info";
             fileView.lines = CODE_AXIS;
             fileView.title = FILES.CODE_AXIS;
             fileView.snippet = SNIPPETS[1];
             break;
         case FILES.ALLIANCE:
+            view.title = "professional-info";
             fileView.lines = ALLIANCE;
             fileView.title = FILES.ALLIANCE;
             fileView.testimonial = TESTIMONIALS[0];
             break;
         case FILES.LEXMARK:
+            view.title = "professional-info";
             fileView.lines = LEXMARK;
             fileView.title = FILES.LEXMARK;
             fileView.testimonial = TESTIMONIALS[3];
             break;
         case FILES.UNAWA:
+            view.title = "professional-info";
             fileView.lines = UNAWA;
             fileView.title = FILES.UNAWA;
             fileView.testimonial = TESTIMONIALS[2];
             break;
         case FILES.UPWORK:
+            view.title = "professional-info";
             fileView.lines = UPWORK;
             fileView.title = FILES.UPWORK;
             fileView.testimonial = TESTIMONIALS[1];
             break;
         case FILES.INSPIREX:
+            view.title = "professional-info";
             fileView.lines = INSPIREX;
             fileView.title = FILES.INSPIREX;
             fileView.testimonial = TESTIMONIALS[0];
             break;
         case FILES.PPC:
+            view.title = "professional-info";
             fileView.lines = PPC;
             fileView.title = FILES.PPC;
             fileView.testimonial = TESTIMONIALS[1];
             break;
         case FILES.MAVC:
+            view.title = "professional-info";
             fileView.lines = MAVC;
             fileView.title = FILES.MAVC;
             fileView.testimonial = TESTIMONIALS[2];
             break;
         case FILES.ANDROID_MASTERS_18:
+            view.title = "professional-info";
             fileView.lines = ANDROID_2018;
             fileView.title = FILES.ANDROID_MASTERS_18;
             fileView.testimonial = TESTIMONIALS[3];
             break;
         case FILES.ANDROID_MASTERS_17:
+            view.title = "professional-info";
             fileView.lines = ANDROID_2017;
             fileView.title = FILES.ANDROID_MASTERS_17;
             fileView.testimonial = TESTIMONIALS[0];
             break;
         case FILES.PTF:
+            view.title = "professional-info";
             fileView.lines = PTF;
             fileView.title = FILES.PTF;
             fileView.testimonial = TESTIMONIALS[1];
             break;
         case FILES.AWS_CLOUD:
+            view.title = "professional-info";
             fileView.lines = AWS_CLOUD;
             fileView.title = FILES.AWS_CLOUD;
             fileView.testimonial = TESTIMONIALS[2];
             break;
         case FILES.SCRUM_MASTER:
+            view.title = "professional-info";
             fileView.lines = SCRUM_MASTER;
             fileView.title = FILES.SCRUM_MASTER;
             fileView.testimonial = TESTIMONIALS[3];
             break;
         case FILES.TOPCIT:
+            view.title = "professional-info";
             fileView.lines = TOPCIT;
             fileView.title = FILES.TOPCIT;
             fileView.testimonial = TESTIMONIALS[0];
             break;
         case FILES.VALORANT:
+            view.title = "hobbies-info";
             fileView.lines = VALORANT;
             fileView.title = FILES.VALORANT;
             fileView.snippet = SNIPPETS[0];
             break;
         case FILES.PS5:
+            view.title = "hobbies-info";
             fileView.lines = PS5;
             fileView.title = FILES.PS5;
             fileView.snippet = SNIPPETS[1];
             break;
         case FILES.SWITCH:
+            view.title = "hobbies-info";
             fileView.lines = SWITCH;
             fileView.title = FILES.SWITCH;
             fileView.snippet = SNIPPETS[2];
             break;
         case FILES.PINGPONG:
+            view.title = "hobbies-info";
             fileView.lines = TABLE_TENNIS;
             fileView.title = FILES.PINGPONG;
             fileView.snippet = SNIPPETS[0];
             break;
         case FILES.FUNKO:
+            view.title = "hobbies-info";
             fileView.lines = FUNKO_POP;
             fileView.title = FILES.FUNKO;
             fileView.snippet = SNIPPETS[1];
@@ -260,6 +284,10 @@ const handleClose = () => {
 
 <style scoped>
 .page-container {
-    height: calc(100vh - 115px);
+    height: calc(100vh - 57px);
+    @media (max-width: 1023px) {
+        min-height: 100vh;
+        height: 100%;
+    }
 }
 </style>

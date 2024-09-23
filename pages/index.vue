@@ -13,7 +13,9 @@
                 <div class="flex flex-col text-white gap-20">
                     <div class="flex flex-col text-white">
                         <span class="text-lg">Hi all. I am</span>
-                        <h2 class="text-2xl mobile:text-4xl lg:text-5xl">
+                        <h2
+                            class="text-2xl mobile:text-4xl lg:text-5xl text-nowrap"
+                        >
                             Charlene Tormes
                         </h2>
                         <div class="flex items-center gap-5 text-secondary-300">
@@ -28,14 +30,22 @@
 
                     <div class="flex flex-col w-full gap-3">
                         <div
-                            class="flex flex-wrap gap-4 text-secondary-100 text-sm mobile:text-sm lg:text-base"
+                            class="hidden md:flex flex-wrap gap-4 text-secondary-100 text-sm mobile:text-sm lg:text-base"
                         >
                             <span>//</span>
                             <span>complete the game to continue</span>
                         </div>
-                        <div class="flex flex-wrap gap-4 text-secondary-100">
+                        <div
+                            class="flex lg:flex-wrap gap-4 text-secondary-100 text-sm mobile:text-sm lg:text-base"
+                        >
                             <span>//</span>
-                            <span>you can also see it on my Github page</span>
+                            <span class="md:block hidden"
+                                >you can also see it on my Github page</span
+                            >
+                            <span class="block md:hidden"
+                                >check out my github page for more
+                                projects</span
+                            >
                         </div>
                         <div
                             class="flex flex-wrap gap-4 text-sm mobile:text-sm lg:text-base"

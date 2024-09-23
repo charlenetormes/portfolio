@@ -1,14 +1,19 @@
 <template>
-    <div class="grid grid-cols-2 w-full overflow-hidden">
-        <div class="editor-container col-span-1 max-h-full overflow-x-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 w-full lg:overflow-hidden">
+        <div
+            class="editor-container col-span-1 max-h-full lg:overflow-x-hidden"
+        >
             <CodeEditor
                 :lines="lines"
                 :title="title"
                 :isTabVisible="isTabVisible"
+                :sectionTitle="sectionTitle"
                 @handleClose="handleClose"
             />
         </div>
-        <div class="editor-container col-span-1 max-h-full overflow-y-auto">
+        <div
+            class="editor-container col-span-1 max-h-full lg:overflow-x-hidden"
+        >
             <CodeShowcase :testimonial="testimonial" :snippet="snippet" />
         </div>
     </div>
@@ -21,6 +26,7 @@ import type { ILine, ITestimonial, ISnippet } from "@/utilities/interfaces";
 const emits = defineEmits(["handleClose"]);
 
 interface Props {
+    sectionTitle: string;
     title: string;
     lines: ILine[];
     isTabVisible: boolean;
@@ -29,6 +35,7 @@ interface Props {
 }
 
 defineProps({
+    sectionTitle: { type: String, default: "professional-info" },
     title: { type: String, default: "about-me" },
     lines: { type: Array as PropType<ILine[]>, default: ABOUT_ME },
     isTabVisible: { type: Boolean, default: false },

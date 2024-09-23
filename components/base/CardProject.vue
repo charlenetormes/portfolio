@@ -1,7 +1,9 @@
 <template>
-    <div class="flex flex-col gap-3 justify-center items-center">
+    <div
+        class="flex flex-col gap-3 lg:justify-start mobile:justify-center lg:items-start mobile:items-center"
+    >
         <div
-            class="flex gap-2 w-full text-secondary-100 items-center justify-center"
+            class="flex flex-wrap gap-2 w-full text-secondary-100 items-start lg:items-center justify-start lg:justify-center"
         >
             <h3 class="text-accent-500">{{ sequence }}</h3>
             <span>//</span>

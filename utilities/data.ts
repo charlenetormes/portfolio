@@ -287,7 +287,7 @@ export const CODE_AXIS = [
         statement: "* Tech Stack:",
     },
     {
-        statement: "* Wordpress,PHP",
+        statement: "* Wordpress, PHP",
     },
     {
         statement: "*",
@@ -333,7 +333,7 @@ export const ALLIANCE = [
         statement: "* Tech Stack:",
     },
     {
-        statement: "* Sprint Java,Hibernate SQL,Javascript",
+        statement: "* Sprint Java, Hibernate SQL, Javascript",
     },
     {
         statement: "*",
@@ -389,7 +389,7 @@ export const LEXMARK = [
         statement: "* Tech Stack:",
     },
     {
-        statement: "* PowerBI,Node.JS,Java,PHP",
+        statement: "* PowerBI, Node.JS, Java, PHP",
     },
     {
         statement: "*",
@@ -436,7 +436,7 @@ export const UNAWA = [
         statement: "* Tech Stack:",
     },
     {
-        statement: "* NodeJS,NestJS,Typescript,MongoDB",
+        statement: "* NodeJS, NestJS, Typescript, MongoDB",
     },
     {
         statement: "*",
@@ -490,7 +490,7 @@ export const UPWORK = [
         statement: "* Tech Stack:",
     },
     {
-        statement: "* Vue/Nuxt3,Vuetify,TailwindCSS,Pinia,Strapi",
+        statement: "* Vue/Nuxt3, Vuetify, TailwindCSS, Pinia, Strapi",
     },
     {
         statement: "*",
@@ -559,10 +559,10 @@ export const INSPIREX = [
     },
     {
         statement:
-            "* VueJS,Nuxt,ReactJS,NodeJS,Typescript,Firebase,PostgreSQL,",
+            "* VueJS, Nuxt, ReactJS, NodeJS, Typescript, Firebase, PostgreSQL, ",
     },
     {
-        statement: "* MySQL,PHP,AWS, Google Appscript,Docker,Git",
+        statement: "* MySQL, PHP, AWS, Google Appscript, Docker, Git",
     },
     {
         statement: "*",

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col w-full py-6 px-4">
+    <div class="flex flex-col w-full py-2 px-2">
         <BaseDisclosure @handleFileClick="handleClick" :sections="sections" />
     </div>
 </template>

@@ -9,7 +9,7 @@
             <form
                 v-if="!isSubmitted"
                 @submit.prevent="handleSubmit"
-                class="flex flex-col gap-6 text-secondary-100 max-w-xl w-full"
+                class="flex flex-col gap-6 text-secondary-100 max-w-xl w-full px-4"
             >
                 <div class="flex flex-col gap-2">
                     <label class="items-start">_name</label>

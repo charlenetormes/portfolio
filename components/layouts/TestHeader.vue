@@ -8,9 +8,13 @@
                     <div
                         class="min-w-80 py-4 px-5 border-r-none lg:border-r-[1px] border-lines-100"
                     >
-                        <h1 class="text-secondary-100 text-base">
-                            charlene-tormes
-                        </h1>
+                        <nuxt-link to="/">
+                            <h1
+                                class="text-secondary-100 text-base hover:text-white cursor-pointer"
+                            >
+                                charlene-tormes
+                            </h1>
+                        </nuxt-link>
                     </div>
                     <div
                         class="hidden lg:flex w-full items-start justify-between"

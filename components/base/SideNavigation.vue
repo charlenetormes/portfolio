@@ -1,5 +1,7 @@
 <template>
-    <div class="h-full max-w-[68px] py-5 px-6 border-r-[1px] border-lines-100">
+    <div
+        class="hidden lg:block h-full max-w-[68px] py-5 px-6 border-r-[1px] border-lines-100"
+    >
         <div class="flex flex-col gap-8">
             <svg
                 class="cursor-pointer"

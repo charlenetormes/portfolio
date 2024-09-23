@@ -1,5 +1,5 @@
 <template>
-    <div class="code-snippet bg-primary-200" tabindex="4">
+    <div class="code-snippet bg-primary-200 text-xs lg:text-base" tabindex="4">
         <pre>
       <code>
         {{ code }}

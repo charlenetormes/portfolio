@@ -3,7 +3,7 @@
         class="flex w-full mobile:max-w-none lg:max-w-80 mobile:h-auto lg:h-full border-r-[1px] border-lines-100"
     >
         <div class="flex flex-col w-full">
-            <BaseSideSection title="contacts">
+            <BaseSideSection title="contacts" defaultOpen>
                 <BaseSideContact />
             </BaseSideSection>
         </div>

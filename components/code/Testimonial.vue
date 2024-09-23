@@ -18,7 +18,9 @@
         <div
             class="w-full flex flex-col gap-2 border-[1px] border-lines-100 py-6 px-7 rounded-[15px] text-secondary-100"
         >
-            <div class="flex gap-2 items-center">
+            <div
+                class="flex lg:flex-row flex-col-reverse gap-2 items-start lg:items-center"
+            >
                 <div class="flex gap-2">
                     <StarIcon
                         v-for="(star, index) in stars"
@@ -26,7 +28,7 @@
                         class="w-4 h-4"
                     />
                 </div>
-                <span>|</span>
+                <span class="hidden lg:block">|</span>
                 <a
                     class="text-accent-500 underline"
                     href="https://www.upwork.com/freelancers/~0113f243486f4ea1ab"
