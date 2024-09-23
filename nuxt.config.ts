@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             baseURL: "/portfolio",
-            EMAIL_API_KEY: process.env.NUXT_API_KEY,
         },
     },
     compatibilityDate: "2024-04-03",
