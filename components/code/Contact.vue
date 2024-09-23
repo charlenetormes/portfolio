@@ -72,6 +72,8 @@ const emits = defineEmits(["update:modelValue"]);
 const isLoading = ref(false);
 const isSubmitted = ref(false);
 
+const apiKey = process.env.NUXT_API_KEY ?? "";
+
 const form = reactive({
     name: "",
     email: "",
@@ -94,7 +96,7 @@ const sendEmail = async () => {
             method: "POST",
             headers: {
                 accept: "application/json",
-                "api-key": config.public.EMAIL_API_KEY,
+                "api-key": apiKey,
                 "content-type": "application/json",
             },
             body: JSON.stringify({
