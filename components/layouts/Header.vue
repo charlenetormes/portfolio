@@ -135,7 +135,7 @@
                 <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
                 <DisclosureButton
                     as="a"
-                    href="/"
+                    href="/portfolio"
                     :class="[
                         'block bg-primary-200 hover:bg-primary-100 hover:text-white cursor-pointer py-2 pl-3 pr-4 text-base font-medium text-secondary-100 sm:pl-5 sm:pr-6',
                         {
