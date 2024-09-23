@@ -147,7 +147,7 @@
                 >
                 <DisclosureButton
                     as="a"
-                    href="/about"
+                    href="/portfolio/about"
                     :class="[
                         'block bg-primary-200 hover:bg-primary-100 hover:text-white cursor-pointer py-2 pl-3 pr-4 text-base font-medium text-secondary-100 sm:pl-5 sm:pr-6',
                         {
@@ -159,7 +159,7 @@
                 >
                 <DisclosureButton
                     as="a"
-                    href="/projects"
+                    href="/portfolio/projects"
                     :class="[
                         'block bg-primary-200 hover:bg-primary-100 hover:text-white cursor-pointer py-2 pl-3 pr-4 text-base font-medium text-secondary-100 sm:pl-5 sm:pr-6',
                         {
@@ -171,7 +171,7 @@
                 >
                 <DisclosureButton
                     as="a"
-                    href="/contacts"
+                    href="/portfolio/contacts"
                     :class="[
                         'block bg-primary-200 hover:bg-primary-100 hover:text-white cursor-pointer py-2 pl-3 pr-4 text-base font-medium text-secondary-100 sm:pl-5 sm:pr-6',
                         {
