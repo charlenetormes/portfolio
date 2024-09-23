@@ -1,6 +1,6 @@
 <template>
     <div>
-        <LayoutsTestHeader />
+        <LayoutsHeader />
         <slot></slot>
         <LayoutsFooter />
     </div>
