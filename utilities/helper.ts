@@ -17,3 +17,8 @@ export const getMonthsAgo = (date: Date): string => {
 
     return `Created ${months} month${months > 1 ? "s" : ""} ago`;
 };
+
+export const buildImageUrl = (path: string) => {
+    const config = useRuntimeConfig();
+    return `${config.public.baseURL}${path}`;
+};

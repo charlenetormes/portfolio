@@ -51,6 +51,7 @@
 </template>
 
 <script lang="ts" setup>
+import { buildImageUrl } from "@/utilities/helper";
 import { TECH } from "@/utilities/enums";
 
 interface Props {

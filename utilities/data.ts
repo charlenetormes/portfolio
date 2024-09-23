@@ -1,6 +1,8 @@
 import { TECH } from "./enums";
 import moment from "moment";
 
+const base_url = "/portfolio";
+
 export const ABOUT_ME = [
     {
         statement: "/**",
@@ -1313,7 +1315,7 @@ export const PROJECTS = [
         description:
             "A calculator app that does basic arithmetic functions and it's built to simulate an iOS calculator app.",
         link: "https://charlenetormes.github.io/candyspace/calculator",
-        image: "/images/png/calculator.png",
+        image: `${base_url}/images/png/calculator.png`,
         tech: TECH.VUE,
         top: false,
     },
@@ -1323,17 +1325,17 @@ export const PROJECTS = [
         description:
             "Built the landing page for Storma using Nuxt 3, Tailwind, and Vuetify. It's connected to a Strapi backend.",
         link: "https://storma.com/",
-        image: "/images/webp/bg-homepage.webp",
+        image: `${base_url}/images/webp/bg-homepage.webp`,
         tech: TECH.VUE,
         top: false,
     },
     {
         sequence: "Project 3",
-        title: "_storma-developer-portal",
+        title: "_storma-dev-portal",
         description:
             "I contributed in the development of the Talent Portal. This is the website for talents looking for jobs.",
         link: "https://client.cloudemployee.io/auth/login/",
-        image: "/images/jpeg/bg-developers.jpg",
+        image: `${base_url}/images/jpeg/bg-developers.jpg`,
         tech: TECH.VUE,
         top: false,
     },
@@ -1343,7 +1345,7 @@ export const PROJECTS = [
         description:
             "I contributed in the developement of the Client Portal. This is where the companies manage their talents.",
         link: "https://talent.cloudemployee.io/auth/login/",
-        image: "/images/png/hero-companies-bg.png",
+        image: `${base_url}/images/png/hero-companies-bg.png`,
         tech: TECH.VUE,
         top: false,
     },
@@ -1353,7 +1355,7 @@ export const PROJECTS = [
         description:
             "Skyrocket response rates. Automate email nudges to recipients.",
         link: "https://supernudge.app/",
-        image: "/images/png/supernudge.png",
+        image: `${base_url}/images/png/supernudge.png`,
         tech: TECH.VUE,
         top: false,
     },
@@ -1363,7 +1365,7 @@ export const PROJECTS = [
         description:
             "A simple to do list website. This is based off the popular knock knock pads.",
         link: "https://knock-knock-89c26.web.app/",
-        image: "/images/png/knookknook.png",
+        image: `${base_url}/images/png/knookknook.png`,
         tech: TECH.REACT,
         top: true,
     },
