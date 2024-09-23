@@ -8,7 +8,7 @@ export default defineNuxtConfig({
                 {
                     rel: "icon",
                     type: "image/x-icon",
-                    href: `${process.env.APP_BASE_URL}/favicon.ico`,
+                    href: `${process.env.NUXT_APP_BASE_URL}/favicon.ico`,
                 },
             ],
         },
@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             baseURL: "/portfolio",
+            EMAIL_API_KEY: process.env.API_KEY,
         },
     },
     compatibilityDate: "2024-04-03",

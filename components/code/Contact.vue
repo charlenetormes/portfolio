@@ -67,6 +67,7 @@
 </template>
 
 <script lang="ts" setup>
+const config = useRuntimeConfig();
 const emits = defineEmits(["update:modelValue"]);
 const isLoading = ref(false);
 const isSubmitted = ref(false);
@@ -89,14 +90,39 @@ const sendNewMessage = () => {
 
 const sendEmail = async () => {
     try {
-        const response = await $fetch("/portfolio/api/send-email", {
+        const response = await fetch("https://api.brevo.com/v3/smtp/email", {
             method: "POST",
-            body: {
-                sender: form.name,
-                senderEmail: form.email,
-                message: form.message,
+            headers: {
+                accept: "application/json",
+                "api-key": config.public.EMAIL_API_KEY,
+                "content-type": "application/json",
             },
-        });
+            body: JSON.stringify({
+                sender: {
+                    email: "charlenetormes@gmail.com",
+                    name: "Charlene Tormes",
+                },
+                to: [
+                    {
+                        email: "charlene.tormes@gmail.com",
+                    },
+                ],
+                subject: `Contacted via Portfolio Website | ${form?.name}`,
+                htmlContent: `<html><head></head><body><p>${form?.message}</p><br/><p>Sender Email: ${form?.email}</p></body></html>`,
+            }),
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                console.log("Success:", data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
         console.log(response);
     } catch (error) {
         console.error("Failed to send email", error);
