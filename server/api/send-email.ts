@@ -5,12 +5,12 @@ export default defineEventHandler(async (event) => {
     const body = await readBody(event);
 
     const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
+        host: process.env.NUXT_SMTP_HOST,
         port: 587,
         secure: false,
         auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
+            user: process.env.NUXT_SMTP_USER,
+            pass: process.env.NUXT_SMTP_PASS,
         },
     });
 
