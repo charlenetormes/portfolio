@@ -17,24 +17,26 @@
             </div>
             <!-- END -->
             <!-- MOBILE VIEW -->
-            <BaseSideSection title="professional-info" defaultOpen>
-                <BaseSideContent
-                    @handleFileClick="handleFileClick"
-                    :sections="PROFESSIONAL_INFO"
-                />
-            </BaseSideSection>
-            <BaseSideSection title="personal-info">
-                <BaseSideContent
-                    @handleFileClick="handleFileClick"
-                    :sections="PERSONAL_INFO"
-                />
-            </BaseSideSection>
-            <BaseSideSection title="hobbies-info">
-                <BaseSideContent
-                    @handleFileClick="handleFileClick"
-                    :sections="HOBBIES_INFO"
-                />
-            </BaseSideSection>
+            <div class="block lg:hidden">
+                <BaseSideSection title="professional-info" defaultOpen>
+                    <BaseSideContent
+                        @handleFileClick="handleFileClick"
+                        :sections="PROFESSIONAL_INFO"
+                    />
+                </BaseSideSection>
+                <BaseSideSection title="personal-info">
+                    <BaseSideContent
+                        @handleFileClick="handleFileClick"
+                        :sections="PERSONAL_INFO"
+                    />
+                </BaseSideSection>
+                <BaseSideSection title="hobbies-info">
+                    <BaseSideContent
+                        @handleFileClick="handleFileClick"
+                        :sections="HOBBIES_INFO"
+                    />
+                </BaseSideSection>
+            </div>
             <!-- END -->
             <BaseSideSection :withTopBorder="true" title="contacts">
                 <BaseSideContact />
