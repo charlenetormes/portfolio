@@ -22,7 +22,7 @@
 
 <script lang="ts" setup>
 useHead({
-    title: "Charlene Tormes | Projects",
+    title: "Charlene Tormes | Contact Me",
 });
 
 const formValues = ref();
