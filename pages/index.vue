@@ -80,8 +80,10 @@
                         class="absolute flex gap-8 w-full left-0 top-0 py-8 px-8"
                     >
                         <div
-                            class="w-full h-[405px] bg-primary-200 rounded-lg"
-                        ></div>
+                            class="game-container relative w-full h-[405px] rounded-lg"
+                        >
+                            <SnakeGame @updateFood="handleFoodUpdate" />
+                        </div>
                         <div class="w-full flex-col justify-center">
                             <div
                                 class="instructions-container w-full flex gap-1 flex-col rounded-lg py-4 px-3"
@@ -109,7 +111,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <SnakeFood />
+                            <SnakeFood :food="Number(food)" />
                         </div>
                     </div>
                 </div>
@@ -122,6 +124,12 @@
 useHead({
     title: "Charlene Tormes",
 });
+
+const food = ref(10);
+
+const handleFoodUpdate = (foodLeft: number) => {
+    food.value = unref(foodLeft);
+};
 </script>
 
 <style scoped>
@@ -135,5 +143,8 @@ useHead({
 
 .instructions-container {
     background: rgba(1, 20, 35, 0.19);
+}
+.game-container {
+    background: rgba(1, 22, 39, 0.84);
 }
 </style>
