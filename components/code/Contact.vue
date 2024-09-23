@@ -51,7 +51,7 @@
             >
                 <h3 class="text-2xl text-white">Thank You! 🤘</h3>
                 <p class="text-balance">
-                    Your message has been accepted. You will receive answer
+                    Your message has been accepted. You will an receive answer
                     really soon!
                 </p>
                 <button

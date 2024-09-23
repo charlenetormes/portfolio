@@ -33,7 +33,7 @@
                             class="hidden md:flex flex-wrap gap-4 text-secondary-100 text-sm mobile:text-sm lg:text-base"
                         >
                             <span>//</span>
-                            <span>complete the game to continue</span>
+                            <span>try to complete the game</span>
                         </div>
                         <div
                             class="flex lg:flex-wrap gap-4 text-secondary-100 text-sm mobile:text-sm lg:text-base"
