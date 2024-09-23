@@ -67,12 +67,16 @@
 </template>
 
 <script lang="ts" setup>
+import { caesarCipherEncode, caesarCipherDecode } from "@/utilities/helper";
 const config = useRuntimeConfig();
 const emits = defineEmits(["update:modelValue"]);
 const isLoading = ref(false);
 const isSubmitted = ref(false);
 
-const apiKey = config?.public.EMAIL_API_KEY ?? "";
+const apiKey = caesarCipherDecode(
+    "erlfzpi-41lhi40lj1k2h7j9k3l6675k043486khli95h03ik722569k98i52mmh9hll59i7-Ht6dbZjZeiU6iChx",
+    7
+);
 
 const form = reactive({
     name: "",
