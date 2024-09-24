@@ -6,9 +6,10 @@
             <span class="text-secondary-100 text-base">find me in:</span>
         </div>
         <div
-            class="relative border-r-[1px] border-lines-100 px-5 py-4 cursor-pointer hover:bg-primary-300 transition-all duration-100"
+            class="relative border-r-[1px] border-lines-100 cursor-pointer hover:bg-primary-300 transition-all duration-100"
         >
             <a
+                class="flex w-full h-full px-5 py-4"
                 href="https://www.linkedin.com/in/charlene-tormes-90023a17b/"
                 target="_blank"
             >
@@ -25,9 +26,13 @@
             </a>
         </div>
         <div
-            class="relative border-r-[1px] border-lines-100 px-5 py-4 cursor-pointer hover:bg-primary-300 transition-all duration-100"
+            class="relative border-r-[1px] border-lines-100 cursor-pointer hover:bg-primary-300 transition-all duration-100"
         >
-            <a href="https://github.com/charlenetormes" target="_blank">
+            <a
+                class="flex w-full h-full px-5 py-4"
+                href="https://github.com/charlenetormes"
+                target="_blank"
+            >
                 <svg
                     class="w-5 h-5"
                     viewBox="0 0 20 20"
@@ -42,9 +47,10 @@
             </a>
         </div>
         <div
-            class="relative border-r-[1px] border-lines-100 px-5 py-4 cursor-pointer hover:bg-primary-300 transition-all duration-100"
+            class="relative border-r-[1px] border-lines-100 cursor-pointer hover:bg-primary-300 transition-all duration-100"
         >
             <a
+                class="flex w-full h-full px-5 py-4"
                 href="https://www.upwork.com/freelancers/~0113f243486f4ea1ab"
                 target="_blank"
             >
